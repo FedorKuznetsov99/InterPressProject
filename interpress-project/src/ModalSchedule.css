@@ -1,0 +1,289 @@
+.modal {
+  width: 100%;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 760px;
+  position: relative;
+  height: 100%;
+}
+
+.redaction {
+color: #000;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form-row2 {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.button-style {
+  width: 30%; /* Каждая кнопка занимает 30% ширины строки */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.hoursType {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 35px;
+  width: 31%;
+}
+
+.hours-counter {
+  width: 33%; /* Каждая кнопка занимает 30% ширины строки */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.plus {
+  background-color: #4f8aff;
+    color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 0px 5px 5px 0px;
+    border-color: #4f8aff;
+}
+
+.clock {
+  background-color: aliceblue;
+  color: black;
+  font-size: 13px;
+  width: 33%;
+}
+
+.minus {
+  background-color: #4f8aff;
+    color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px 0px 0px 5px;
+    border-color: #4f8aff;
+}
+
+.input-hours {
+  width: 50px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 32%;
+}
+
+.do {
+  background-color: #ccc;
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.date-range input {
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+}
+
+button.save-button, button.close-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4f8aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Скрываем иконку календаря для Chrome, Safari, Edge */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Скрываем иконку календаря для Firefox */
+input[type="date"]::-moz-calendar-picker-indicator {
+  display: none;
+}
+
+/* Скрываем стрелки для Chrome, Safari, Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+
+/* 2 строка */
+.modal2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content2 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 700px; /* Увеличена ширина для комфортного размещения элементов */
+}
+
+.day-selection-container {
+  display: flex;
+}
+
+.day-group-select, .day-select {
+  display: flex;
+  gap: 0; /* Убираем отступы между кнопками */
+}
+
+button {
+  padding: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+  width: 85px; /* Ширина для остальных кнопок */
+  height: 35px; /* Единая высота для всех кнопок */
+}
+
+button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Увеличенная ширина для кнопки "ПН/СР/ПТ" */
+.day-group-select button:first-child {
+  width: 120px; /* Увеличиваем ширину для кнопки */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+footer button {
+  width: 48%;
+  padding: 10px;
+}  
+
+
+
+/* 3 раздел */
+.courseType {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 35px;
+  width: 31%;
+}
+
+.setCourseType {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 35px;
+    width: 31%;
+  }
+
+  .hours-counter3 {
+    width: 33%; /* Каждая кнопка занимает 30% ширины строки */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+
+  .clock3 {
+    background-color: aliceblue;
+    color: black;
+    font-size: 13px;
+    width: 33%;
+  }
+  .minus3 {
+      background-color: #4f8aff;
+      color: white;
+      height: 35px;
+      width: 35px;
+      border-radius: 5px 0px 0px 5px;
+      border-color: #4f8aff;
+  }
+
+  .plus3 {
+    background-color: #4f8aff;
+      color: white;
+      height: 35px;
+      width: 35px;
+      border-radius: 0px 5px 5px 0px;
+      border-color: #4f8aff;
+  }
+  
+  .do3 {
+    background-color: #ccc;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .hours-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
